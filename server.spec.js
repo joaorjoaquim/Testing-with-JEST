@@ -1,7 +1,7 @@
-const request = require('supertest')
-const app = require('./server')
+const request = require('supertest');
+const app = require('./server');
 
-describre('Test My server', () => {
+describe('Test My server', () => {
     it('Get main route', async () => {
         const response = await request(app).get('/')
 
