@@ -9,6 +9,14 @@ describe('math functions', () => {
         console.log('before each')
     })
 
+    afterAll(() => {
+       console.log('after all') 
+    })
+
+    afterEach(() => {
+        console.log('after each')
+    })
+
     it('sums 2 numbers', () => {
         expect(sum(1,2)).toBe(3)
     })
